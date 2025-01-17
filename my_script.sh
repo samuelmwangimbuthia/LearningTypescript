@@ -38,4 +38,32 @@ myAssociativeArray=( [name]=Paul [age]=20 )
 # access values
 echo "${myAssociativeArray[name]}"
 
+#String and Arithmetic Operation
+# String manipulation examples
+str="shell scripting techniqeus"
+# Length
+echo ${#str}
 
+# Replace
+echo ${str/scripting/programming}
+
+#Extract substring:
+echo ${str:6:9}
+
+# uppercase
+echo ${str^^}
+
+echo ${str}
+#user interfaces: Taking input from the user in shell scripting
+#basic Input
+read -p "Your name: " var_name
+echo "You entered $var_name"
+
+#Arithmetic Operations
+#Usint the let command
+let a=5*10
+echo $a
+
+#using (()) for arithmetic operations
+((a++))
+echo $a
